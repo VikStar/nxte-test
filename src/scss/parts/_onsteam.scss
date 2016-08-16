@@ -1,0 +1,70 @@
+.onsteam {
+	padding-top: 80px;
+	padding-bottom: 90px;
+	text-align: center;
+
+	#{&}-content {
+		.title {
+			text-transform: uppercase;
+			font-size: 42px;
+			margin-top: 0;
+		}
+	}
+
+	#{&}-member {
+		display: inline-block;
+		height: 298px;
+		position: relative;
+		overflow: hidden;
+		margin: 0 5px 5px;
+		width: 280px;
+		@include bp(340) {
+			width: 298px;
+		};
+
+		.member-img {
+			height: 100%;
+
+			img {
+				width: 100%;
+				max-width: 298px;
+			}
+		}
+
+		.member-title {
+			position: absolute;
+		    bottom: 15px;
+		    width: 90%;
+		    background: url("../img/onsteam/member-title-bg.png") no-repeat;
+		    background-size: 100%;
+		    margin-left: 5%;
+		    padding: 10px;
+		    text-align: left;
+		    @include bp(340) {
+		    	bottom: 5px;
+		    };
+
+		    .member-name {
+		    	text-transform: uppercase;
+		    }
+		}
+
+		.member-social-links {
+			position: absolute;
+			right: 10px;
+		    top: 12px;
+
+			a {
+				display: inline-block;
+				width: 36px;
+				height: 36px;
+				background: url("../img/social-icons.png");
+			    background-size: auto 36px;
+			}
+
+			.fb {
+				background-position: 0 0;
+			}
+		}
+	}
+}

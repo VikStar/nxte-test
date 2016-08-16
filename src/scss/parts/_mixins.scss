@@ -1,0 +1,28 @@
+// Breakpoint
+//
+// Shortcut for @media(min-width: ) {}
+
+@mixin bp( $point, $type: min ) {
+	@media (#{$type}-width: $point + px) { @content }
+}
+
+// Box sizing
+// 
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+// Clearfix
+//
+@mixin cf() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

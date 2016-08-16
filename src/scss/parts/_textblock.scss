@@ -1,0 +1,21 @@
+.textblock {
+	padding: 100px 0;
+
+	.textblock-content {
+		max-width: 660px;
+		margin: 0 auto;
+
+		p {
+			margin: 0;
+
+			&:last-child {
+				margin-top: 34px;
+			}
+		}
+
+		.title {
+			font-size: 42px;
+			line-height: 1;
+		}
+	}
+}
